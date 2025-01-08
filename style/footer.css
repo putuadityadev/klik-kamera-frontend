@@ -1,0 +1,99 @@
+.footer-custom {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-custom h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-custom p, 
+.footer-custom ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section.links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section.links a:hover {
+  color: #888;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.social-icons {
+  text-align: right;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #888;
+}
+
+.row-footer{
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .footer-custom .text-right {
+    text-align: left;
+  }
+  
+  .social-icons {
+    text-align: left;
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+
+  .row-footer{
+    flex-direction: column;
+  }
+}
