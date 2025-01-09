@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang Belanja - Klik Kamera</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/searchbar.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="style/gridHome.css">
+  <link rel="stylesheet" href="style/testimonial.css">
+  <link rel="stylesheet" href="style/clients.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/produk-navbar.css">
+  <link rel="stylesheet" href="style/produk-filter.css">
+  <link rel="stylesheet" href="style/items.css">
+</head>
+<body>
+<main class="et-main">
+  <nav class="produk-hero-tabs-container">
+    <div class="hamburger-menu">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
+    <div class="produk-nav-menu">
+      <a class="produk-et-hero-tab" href="index.html">Halaman Utama</a>
+      <a class="produk-et-hero-tab" href="produk.html">Produk</a>
+      <a class="produk-et-hero-tab" href="paket.html">Paket</a>
+      <a class="produk-et-hero-tab" href="persyaratan.html">Persyaratan</a>
+      <a class="produk-et-hero-tab active" href="#tab-other">Keranjang</a>
+      <span class="items-et-hero-tab-slider"></span>
+    </div>
+    <a href="items.html" style="font-weight: bold;"  class="produk-et-hero-tab cart-items-mobile">Items <span>(0)</span></a>
+  </nav>
+
+  <section class="items-container">
+    <div class="items-wrapper">
+      <div class="items-header">
+        <h1>Keranjang Pesanan</h1>
+        <p>Atur dan proses pesanan Anda</p>
+      </div>
+
+      <div class="items-content">
+        <div class="items-list">
+          <div class="items-section-header">
+            <h2>Produk dalam Keranjang</h2>
+          </div>
+
+          <div class="items-product-list">
+            <div class="items-product-card">
+              <div class="items-product-image">
+                <img src="foto_produk/canon-camera.jpg" alt="Kamera Canon">
+              </div>
+              <div class="items-product-details">
+                <h3>Kamera Canon EOS R6</h3>
+                <p>Paket Sewa Profesional</p>
+                <div class="items-product-price">
+                  <span>Rp 1.500.000</span>
+                  <div class="items-quantity-control">
+                    <button class="items-qty-btn items-qty-minus">-</button>
+                    <input type="number" class="items-qty-input" value="1" min="1">
+                    <button class="items-qty-btn items-qty-plus">+</button>
+                  </div>
+                </div>
+                <button class="items-product-remove">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="items-product-card">
+              <div class="items-product-image">
+                <img src="foto_produk/sony-lens.jpg" alt="Lensa Sony">
+              </div>
+              <div class="items-product-details">
+                <h3>Lensa Sony 50mm f/1.4</h3>
+                <p>Sewa Lensa Premium</p>
+                <div class="items-product-price">
+                  <span>Rp 500.000</span>
+                  <div class="items-quantity-control">
+                    <button class="items-qty-btn items-qty-minus">-</button>
+                    <input type="number" class="items-qty-input" value="1" min="1">
+                    <button class="items-qty-btn items-qty-plus">+</button>
+                  </div>
+                </div>
+                <button class="items-product-remove">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="items-summary">
+          <div class="items-section-header">
+            <h2>Ringkasan Pesanan</h2>
+          </div>
+          <div class="items-summary-details">
+            <div class="items-summary-row">
+              <span>Subtotal</span>
+              <span class="items-summary-value">Rp 2.000.000</span>
+            </div>
+            <div class="items-summary-row">
+              <span>Pajak (10%)</span>
+              <span class="items-summary-value">Rp 200.000</span>
+            </div>
+            <div class="items-summary-row items-summary-total">
+              <span>Total</span>
+              <span class="items-summary-value">Rp 2.200.000</span>
+            </div>
+          </div>
+          <button class="items-checkout-btn">Lanjutkan Pembayaran</button>
+        </div>
+      </div>
+
+      <div class="items-additional-info">
+        <div class="items-promo-section">
+          <input type="text" class="items-promo-input" placeholder="Masukkan Kode Promo">
+          <button class="items-promo-btn">Terapkan</button>
+        </div>
+        <div class="items-continue-shopping">
+          <a href="produk.html" class="items-continue-btn">
+            <i class="fas fa-arrow-left"></i> Lanjutkan Berbelanja
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-custom">
+    <!-- Footer yang sama dengan halaman lain -->
+  </footer>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="Js/main.js"></script>
+<script src="Js/items.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/searchbar.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="style/gridHome.css">
+  <link rel="stylesheet" href="style/testimonial.css">
+  <link rel="stylesheet" href="style/clients.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/produk-navbar.css">
+  <link rel="stylesheet" href="style/produk-filter.css">
+</head>
+<body>
+
+<!-- Main -->
+<main class="et-main">
+  <nav class="produk-hero-tabs-container">
+    <div class="hamburger-menu">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
+    <div class="produk-nav-menu">
+      <a class="produk-et-hero-tab" href="index.html">Halaman Utama</a>
+      <a class="produk-et-hero-tab" style="font-weight: bold;" href="produk.html">Produk</a>
+      <a class="produk-et-hero-tab" href="paket.html">Paket</a>
+      <a class="produk-et-hero-tab" href="persyaratan.html">Persyaratan</a>
+      <a class="produk-et-hero-tab" href="informasi.html">Informasi</a>
+      <span class="produk-et-hero-tab-slider"></span>
+    </div>
+    <a href="items.html" class="produk-et-hero-tab cart-items-mobile">Items <span>(0)</span></a>
+  </nav>
+
+
+  <section class="et-slide" id="tab-halaman-produk">
+    <div class="d-flex justify-content-center h-100">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="search..." name="">
+            <a href="#" class="search-icon">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="container-produk">
+      <aside class="col-md-3">
+        <div class="card">
+          <article class="filter-group">
+            <header class="card-header">
+              <h6 class="title">Kategori Produk</h6>
+              <i class="icon-control fa fa-chevron-down"></i>
+            </header>
+            <div class="filter-content collapse show">
+              <div class="card-body">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <div class="custom-control-label">Kamera DSLR 
+                    <b class="badge badge-pill float-right">15</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <div class="custom-control-label">Kamera Mirrorless 
+                    <b class="badge badge-pill float-right">20</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <div class="custom-control-label">Lensa 
+                    <b class="badge badge-pill float-right">35</b>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </article>
+
+          <article class="filter-group">
+            <header class="card-header">
+              <h6 class="title">Merk Kamera</h6>
+              <i class="icon-control fa fa-chevron-down"></i>
+            </header>
+            <div class="filter-content collapse show">
+              <div class="card-body">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <div class="custom-control-label">Sony 
+                    <b class="badge badge-pill float-right">25</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <div class="custom-control-label">Canon 
+                    <b class="badge badge-pill float-right">18</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <div class="custom-control-label">Nikon 
+                    <b class="badge badge-pill float-right">12</b>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </article>
+
+          <article class="filter-group">
+            <header class="card-header">
+              <h6 class="title">Rentang Harga</h6>
+              <i class="icon-control fa fa-chevron-down"></i>
+            </header>
+            <div class="filter-content collapse show">
+              <div class="card-body">
+                <input type="range" class="custom-range" min="0" max="1000000" name="harga">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Min</label>
+                    <input class="form-control" placeholder="Rp 0" type="number">
+                  </div>
+                  <div class="form-group text-right col-md-6">
+                    <label>Max</label>
+                    <input class="form-control" placeholder="Rp 1,000,000" type="number">
+                  </div>
+                </div>
+                <button class="btn btn-block btn-dark">Terapkan</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </aside>
+      <div>
+        <div class="row ">
+          <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                  <div class="product-image">
+                      <a href="#" class="image">
+                          <img src="foto_produk/sonya67.png">
+                      </a>
+                      <span class="product-discount-label">-23%</span>
+                      <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+
+                      </ul>
+                      <a href="" class="add-to-cart">Add to Cart</a>
+                  </div>
+                  <div class="product-content">
+                      <h3 class="title"><a href="#">Kamera Sony A6700</a></h3>
+                      <div class="price">Rp 285.000 <span>Rp 300.000</span></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                  <div class="product-image">
+                      <a href="#" class="image">
+                          <img src="foto_produk/sonya67.png">
+                      </a>
+                      <span class="product-discount-label">-23%</span>
+                      <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+
+                      </ul>
+                      <a href="" class="add-to-cart">Add to Cart</a>
+                  </div>
+                  <div class="product-content">
+                      <h3 class="title"><a href="#">Kamera Sony A6700</a></h3>
+                      <div class="price">Rp 285.000 <span>Rp 300.000</span></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                  <div class="product-image">
+                      <a href="#" class="image">
+                          <img src="foto_produk/sonya67.png">
+                      </a>
+                      <span class="product-discount-label">-23%</span>
+                      <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+
+                      </ul>
+                      <a href="" class="add-to-cart">Add to Cart</a>
+                  </div>
+                  <div class="product-content">
+                      <h3 class="title"><a href="#">Kamera Sony A6700</a></h3>
+                      <div class="price">Rp 285.000 <span>Rp 300.000</span></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                  <div class="product-image">
+                      <a href="#" class="image">
+                          <img src="foto_produk/sonya67.png">
+                      </a>
+                      <span class="product-discount-label">-23%</span>
+                      <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+
+                      </ul>
+                      <a href="" class="add-to-cart">Add to Cart</a>
+                  </div>
+                  <div class="product-content">
+                      <h3 class="title"><a href="#">Kamera Sony A6700</a></h3>
+                      <div class="price">Rp 285.000 <span>Rp 300.000</span></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                  <div class="product-image">
+                      <a href="#" class="image">
+                          <img src="foto_produk/sonya67.png">
+                      </a>
+                      <span class="product-discount-label">-23%</span>
+                      <ul class="product-links">
+                          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+
+                      </ul>
+                      <a href="" class="add-to-cart">Add to Cart</a>
+                  </div>
+                  <div class="product-content">
+                      <h3 class="title"><a href="#">Kamera Sony A6700</a></h3>
+                      <div class="price">Rp 285.000 <span>Rp 300.000</span></div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+<footer class="footer-custom">
+  <div class="container">
+    <div class="footer-content">
+      <div class="row-footer">
+        <div class="col-md-4">
+          <div class="footer-section about">
+            <h3>Klik Kamera</h3>
+            <p>Platform sewa kamera & lensa terpercaya di Bali. Menyediakan berbagai pilihan kamera dan lensa berkualitas untuk kebutuhan Anda.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="footer-section links">
+            <h3>Produk</h3>
+            <ul>
+              <li><a href="#">Kamera DSLR</a></li>
+              <li><a href="#">Kamera Mirrorless</a></li>
+              <li><a href="#">Lensa</a></li>
+              <li><a href="#">Aksesoris</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="footer-section contact">
+            <h3>Kontak Kami</h3>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Lokasi</p>
+              <ul>
+                <li>Jl. Kenyeri, Kayubihi, Bangli</li>
+                <li>Gg. IXB No. 14A, Penatih, Denpasar Timur</li>
+              </ul>
+              <p><i class="fas fa-envelope"></i> info@klikkamera.com</p>
+              <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="bottom-footer">
+        <div class="col-md-6">
+          <p>&copy; 2023 Klik Kamera. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-right">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="Js/main.js"></script>
+<script src="Js/produk.js"></script>
+</body>
+</html>

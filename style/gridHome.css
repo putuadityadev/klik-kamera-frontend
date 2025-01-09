@@ -4,7 +4,7 @@
   border: 1px solid #e0e0e0;
   margin: 0 auto;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  width: 50vw; 
+  width: 80vw; 
   max-width: 100%;
 }
 
@@ -37,7 +37,7 @@
 
 .product-grid .product-discount-label {
   color: #fff;
-  background: #000;
+  background: #052347;
   font-size: 13px;
   font-weight: 600;
   line-height: 25px;
@@ -85,7 +85,7 @@
 }
 
 .product-grid .add-to-cart {
-  background: #000;
+  background: #052347;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -127,11 +127,11 @@
 }
 
 .product-grid .title a:hover {
-  color: #000;
+  color: #052347;
 }
 
 .product-grid .price {
-  color: #0d0d0d;
+  color: #052347;
   font-size: 14px;
   font-weight: 600;
 }
@@ -155,10 +155,10 @@
 
 @media (max-width: 768px) {
   .product-grid {
-      max-width: 50vw;
+      width: 70vw;
   }
 
   .product-grid .product-image {
-      height: 250px;
+      height: 30vh;
   }
 }

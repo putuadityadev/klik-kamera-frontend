@@ -1,0 +1,167 @@
+.filter-sidebar {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.filter-group:last-child {
+  border-bottom: none;
+}
+
+.filter-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter-group-header h6 {
+  margin: 0;
+  color: #052347;
+}
+
+.list-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.list-menu li {
+  margin-bottom: 10px;
+}
+
+.list-menu a {
+  color: #052347;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list-menu a:hover {
+  color: #666;
+}
+
+.product-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-title {
+  color: #052347;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-price {
+  color: #052347;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn {
+  background-color: #052347;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #333;
+}
+.product-page-container {
+  display: flex;
+}
+
+.container-produk{
+  display: flex;
+  margin-top: 20px;
+  align-items: start;
+  justify-content: center;
+  margin-left: 15vw;
+}
+
+
+.row {
+  margin-left: auto;
+  width: fit-content;
+  display: flex;
+  justify-content: start;
+
+}
+@media (max-width: 768px) {
+  .product-grid-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container-produk{
+    flex-direction: column;
+    margin-left: 8vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .product-page-container {
+      display: flex;
+  }
+
+  .filter-sidebar {
+      width: 25%;
+      margin-right: 20px;
+  }
+
+  .product-main {
+      width: 75%;
+  }
+
+  .product-grid-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}

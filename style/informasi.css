@@ -1,0 +1,158 @@
+.informasi-container {
+  padding-top: 90px;
+  background-color: #f9f9f9;
+}
+
+.informasi-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.informasi-header h1 {
+  color: #052347;
+  font-weight: bold;
+}
+
+.informasi-tentang {
+  margin-bottom: 40px;
+}
+
+.informasi-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.informasi-gambar {
+  flex: 1;
+}
+
+.informasi-gambar img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.informasi-deskripsi {
+  flex: 1;
+}
+
+.informasi-deskripsi h2 {
+  color: #052347;
+  margin-bottom: 15px;
+}
+
+.informasi-testimoni {
+  margin-bottom: 40px;
+}
+
+.informasi-testimoni .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.informasi-testimoni-card {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(5, 35, 71, 0.2); /* Adjusted box-shadow color */
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.informasi-testimoni-card:hover {
+  transform: translateY(-5px);
+}
+
+.informasi-testimoni-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.informasi-testimoni-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.informasi-testimoni-konten p {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.informasi-testimoni-konten h4 {
+  color: #415d7a; /* Adjusted text color to a darker blue */
+}
+
+.informasi-lokasi {
+  margin-bottom: 40px;
+}
+
+.informasi-section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.informasi-section-header h2 {
+  color: #052347;
+  position: relative;
+  display: inline-block;
+}
+
+.informasi-section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #052347;
+}
+
+.informasi-maps {
+  margin-bottom: 20px;
+}
+
+.informasi-alamat {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.informasi-alamat div {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(5, 35, 71, 0.2); /* Adjusted box-shadow color */
+}
+
+.informasi-alamat h3 {
+  color: #052347;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .informasi-row,
+  .informasi-testimoni .row,
+  .informasi-alamat {
+      flex-direction: column;
+  }
+
+  .informasi-gambar,
+  .informasi-deskripsi,
+  .informasi-testimoni-card,
+  .informasi-alamat div {
+      width: 100%;
+  }
+}

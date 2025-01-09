@@ -1,5 +1,5 @@
 .search {
-  margin-bottom: auto;
+  margin-bottom: 20px;
   margin-top: 20px;
   height: 70px;
   background-color: #fff;
@@ -16,7 +16,7 @@
   border: 0;
   outline: 0;
   background: none;
-  caret-color: #000000;
+  caret-color: #052347;
   font-size: 21px;
   font-weight: 300;
   padding: 0 10px;
@@ -30,12 +30,12 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #000000;
+  background-color: #052347;
   cursor: pointer;
 }
 
 .search:hover .search-icon {
-  background: #000000;
+  background: #052347;
   color: #fff;
 }
 
@@ -47,7 +47,7 @@ a:link {
 
 @media (max-width: 768px) {
   .search {
-      margin: 10px auto;
+      margin-left: 10vw;
       height: 50px;
   }
 

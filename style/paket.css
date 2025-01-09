@@ -1,0 +1,165 @@
+.paket-container {
+  padding-top: 90px;
+}
+
+.paket-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.paket-header h1 {
+  font-size: 2.5rem;
+  color: #052347;
+  font-weight: bold;
+}
+
+.paket-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.paket-filter-btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 1px solid #052347;
+  background-color: transparent;
+  color: #052347;
+  transition: all 0.3s ease;
+}
+
+.paket-filter-btn:hover {
+  background-color: #052347;
+  color: #fff;
+}
+
+.paket-filter-btn.active {
+  background-color: #052347;
+  color: #fff;
+}
+
+.paket-categories {
+  margin-bottom: 40px;
+}
+.paket-et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #052347;
+  transition: left 0.3s ease;
+}
+.paket-category-title {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.paket-category-title h2 {
+  display: inline-block;
+  padding: 0 20px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  font-size: 1.8rem;
+}
+
+.paket-category-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #052347;
+  z-index: 0;
+}
+
+.paket-grid {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.paket-grid:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+.paket-grid-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.paket-grid-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.paket-grid-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.paket-grid-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #052347;
+}
+
+.paket-grid-price {
+  font-weight: bold;
+  color: #052347;
+  font-size: 1.1rem;
+}
+
+.paket-grid-cart-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #052347;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.paket-grid-cart-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.paket-categories.hidden {
+  display: none;
+}
+
+.paket-row {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .paket-filter {
+      flex-wrap: wrap;
+  }
+
+  .paket-filter-btn {
+      margin: 5px;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+  }
+
+  .paket-grid-image {
+      height: 200px;
+  }
+
+  .paket-row {
+    flex-direction: column;
+  }
+}
